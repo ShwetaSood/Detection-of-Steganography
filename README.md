@@ -10,7 +10,7 @@ Features used for steganalysis method:
 <li>Run Percentage/ Number of possible runs</li>
 <li>Maximum length of run</li>
 </ol>
-More details in MS_report.pdf <br>
+<b>More details in MS_report.pdf</b><br>
 File descriptions (in both LSB-Matching/ and LSB-Embedding/): <br>
 <ol type="1">
 <li>generating_images.m - generating 6 images from imput image and calling graymatrix_features.m to save 24 feature vectors (4 for each image)</li>
