@@ -11,7 +11,6 @@ X=[len1 len2 len3 len4 len5];
 Y=[train(1,1) train(44,1) train(85,1) train(140,1) train(171,1)];
 hold on;
 plot(X,Y);
-%Y=[train2.train(1,1) train2.train(41,1) train2.train(81,1) train2.train(121,1) train2.train(161,1)];
 Y=[train2.train(9,1) train2.train(21,1) train2.train(100,1) train2.train(121,1) train2.train(161,1)];
 plot(X,Y,'g');
 title('GLNU vs size of embedded message (bits)');
@@ -19,8 +18,6 @@ xlabel('Size of embedded message (bits)');
 ylabel('GLNU');
 legend('LSB Embedding','LSB Matching','Location','southeast');
 hold off;
-%figure,plot(X,Y2);
-%Y2=[train(1,2) train(41,2) train(81,2) train(121,2) train(161,2)];
 Y2=[train(1,2) train(41,2) train(81,2) train(121,2) train(161,2)];
 figure
 hold on;
