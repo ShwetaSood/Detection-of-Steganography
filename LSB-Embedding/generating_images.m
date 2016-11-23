@@ -53,6 +53,4 @@ for i=1:200
 end
 save('traindata.mat','train')
 
-%figure,imshow(B5);
-%figure,imshow(B6);
 
