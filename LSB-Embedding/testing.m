@@ -79,7 +79,6 @@ for i=221:240
     imwrite(image,['./testing/' num2str(name) '.jpg']);
     name=name+1;
     %figure,imshow(image);
-    
 end
 %60 percent embedding
 for i=241:260
