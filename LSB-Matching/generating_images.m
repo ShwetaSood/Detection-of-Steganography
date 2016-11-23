@@ -4,8 +4,6 @@ train=zeros(400,24);
 m=1;
 for i=1:200
     image=imread(['./stego1/' num2str(i) '.jpg']);
-    %image=imread('lena.tif');
-    %image=rgb2gray(image);
     image=imresize(image,[256 256]);
     [h, w, d]=size(image);
     pic=image;
@@ -29,8 +27,6 @@ end
 
 for i=1:200
     image=imread(['./dataset/' num2str(i) '.jpg']);
-    %image=imread('lena.tif');
-    %image=rgb2gray(image);
     image=imresize(image,[256 256]);
     [h, w, d]=size(image);
     pic=image;
@@ -52,7 +48,3 @@ for i=1:200
     m=m+1;
 end
 save('traindata_match.mat','train')
-
-%figure,imshow(B5);
-%figure,imshow(B6);
-
