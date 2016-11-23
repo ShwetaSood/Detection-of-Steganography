@@ -16,7 +16,6 @@ for i=1:40
     B8 = bitget(pic,8)*2^7 ; 
   
     len1=0.2*(256*256);
-    %x = randi([0 1],1,len1);
     x=randn(1,len1)<.45;
     m=1;
     f=0;
