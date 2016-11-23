@@ -1,39 +1,8 @@
 
 function [ glnu, rln, mlor, ratio ] = graymatrix(image)
-%{
-image=imread('lena.tif'); %Comment this and below set
-image=rgb2gray(image);
-image=imresize(image,[256 256]);
-%}
+
 [h, w, d]=size(image);
 matrix=zeros(256,256);
-
-%{
-image=[[0 0 3 3];[1 2 2 1];[3 2 2 2];[2 1 1 1]];
-h=4;
-w=4;
-matrix=zeros(4,4);
-%}
-%{
-image_temp=zeros(h,w);
-angle=90;
-k=1;
-if(angle==90)
-    for j=1:w
-        l=1;
-        for i=h:-1:1
-            %disp([num2str(i) ',' num2str(j)]);
-            %disp([num2str(k) ',' num2str(l)]);
-            image_temp(k,l)=image(i,j);
-            l=l+1;
-        end
-        k=k+1;
-    end
-end 
-%}
-%image_temp=imrotate(image,-90);
-
-
 max=0;
 for i=1:h
     j=1;
