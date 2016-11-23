@@ -1,3 +1,5 @@
+% SVM classification
+
 clear all;
 load('traindata.mat');
 group=zeros(400,1);
